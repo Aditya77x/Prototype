@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITWITHUS</title>
+    <link rel="stylesheet" href="CSS/gym.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* CSS reset  */
+        body{
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('gym1.jpg');
+            background-size: cover;
+            color: white;
+        }
+        .left{
+            /* background-color: red; */
+            display: inline-block;
+            position: absolute;
+            left: 45px;
+            top: 10px;
+        }
+        .left img{
+            width: 140px;
+            filter: invert(100%);
+        }
+        .mid{
+            /* background-color: rgb(159, 159, 173); */
+            width: 45%;
+            margin: 20px auto;
+        }
+        .right{
+            border-color: orange;
+            display: inline-block;
+            position: absolute;
+            right: 40px;
+            top: 20px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 18px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 30px 30px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: grey;
+        } 
+        #searchid{
+            margin: 16px 9px;
+    /* padding: 4px 40px; */
+           border-radius: 6px;
+           padding-left: 8px;
+           padding-top: 4px;
+           padding-bottom: 4px;
+           padding-right: 44px;
+        }
+        .container{
+            border: 2px solid rgba(88, 84, 84, 0.192);
+            background-color: rgba(88, 84, 84, 0.233);
+            border-radius: 15px;
+            width: 45%;
+            margin: 87px auto;
+            padding: 20px 20px;
+        }
+        .btn{
+            display: block;
+            color: white;
+            background-color: black;
+            padding: 4px 80px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 25px auto;
+        }
+        .btn:hover{
+            background-color: rgb(34, 32, 32);
+        }
+        .form-group input{
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+        .container h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+           <img src="img/logo.png" alt="image">
+           <!-- <div>RAW FITNESS</div> -->
+        </div>
+        <!-- for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CONTENT</a></li>
+                <li><a href="#">ABOUT US</a> </li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!-- for options -->
+        <div class="right">
+            <input type="text" name="search" id="searchid" placeholder="&#x1F50E;&#xFE0E;search">
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in your area</h1>
+        <form action="MAA_CHUDAO_AB.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Area you are looking for">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Your contact number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Password">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>
